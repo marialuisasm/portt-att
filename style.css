@@ -16,52 +16,55 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #1d1b1d
+    
 }
 
-/* WRAPPER */
-.wrapper {
-    max-width: 1100px;
+section {
+    padding: 3rem 2rem;
     margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1200px;
+
 }
 
 /* NAVBAR */
-header {
-    position:relative;
+.header {
+    font-weight: 700px;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
-    padding: 20px 0;
+    z-index: 99;
+    background-color: #a78bfa;
+    height:140px;
+    
+
 }
 
-.nav {
+.header section {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 15px 25px;
-    border-radius: 16px;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    
+
+
 }
 
-.menu a:hover {
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar a:hover {
     border-top: 3px solid #6f41d4;
     border-radius: 2px;
     padding-top: 4px;
     transition: 0.4s;
-}
-
-.brand {
-    font-size: 1.5rem;
-    font-weight: 700;
-    background: var(--gradient-2);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-.menu a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #ffffff;
+    color: #000000;
+    font-weight: 500;
 }
 
 /* HERO */
@@ -77,6 +80,7 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
+    height: 400px;
 }
 
 /* TEXTO HERO */
@@ -116,8 +120,10 @@ header {
     background: var(--gradient-2);
     color: white;
     text-decoration: none;
-    border-radius:16px;
+    border-radius: 16px;
     font-weight: 600;
+    transform: translateY(-10px);
+    
 }
 
 /* CARD */
@@ -126,13 +132,13 @@ header {
     padding: 30px;
     border-radius: 24px;
     text-align: center;
-    
+
 }
 
 .hero-card img {
-    width:120px;
-    height:100px;
-    border-radius: 24px;
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
     margin-bottom: 15px;
 }
 
@@ -153,8 +159,8 @@ header {
 
 /* INFO BOX */
 .info-box {
-    color: 
-    margin-top: 20px;
+    color:
+        margin-top: 20px;
 }
 
 /* SECTIONS */
@@ -180,9 +186,9 @@ header {
     background: #121212;
     padding: 25px;
     border-radius: 12px;
-    text-align:left;
+    text-align: left;
     border-top: 2px solid #6f41d4;
-    color:#eee;
+    color: #eee;
     /* ADICIONAR UM TRANSFORM AQUI DEPOIS */
 }
 
@@ -193,6 +199,7 @@ header {
     margin: 0 auto;
     color: #ffffff;
 }
+
 .journey .container .section-title.fade-in {
     text-align: center;
     padding-top: 20px;
