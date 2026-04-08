@@ -245,28 +245,36 @@ section {
 /* TIMELINE */
 .journey-timeline {
     position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100%;          
     max-width: 1200px;    
     margin: 0 auto;       
     color: #ffffff;
-    padding-left: 0px; /* espaço pra linha + bolinha */
+    padding-left: 0px;
+    /* espaço pra linha + bolinha */
 }
 
 /* LINHA À ESQUERDA */
 .journey-timeline::before {
     content: '';
     position: absolute;
-    left: 30px; /* posição da linha */
+    left: 38px; /* posição da linha */
     top: 0;
     bottom: 0;
     width: 2px;
     background: var(--gradient-1);
+    height: 680px;
 }
 
 /* ITEM */
 .timeline-item {
     position: relative;
     margin-bottom: 50px;
+    display: flex;
+    gap: 14px;
+    justify-content: space-between;
+    
 }
 
 /* REMOVE o zig-zag */
@@ -309,7 +317,7 @@ section {
 .timeline-item:nth-child(odd) .timeline-content,
 .timeline-item:nth-child(even) .timeline-content {
     margin-right: 0;
-    margin-left: 70px;
+    margin-left: 120px;
 }
 
 /* SKILLS */
