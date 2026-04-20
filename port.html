@@ -6,20 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Maria Luisa</title>
 
-    <link rel="icon" href="https://i.ibb.co/QvmxvDz3/6e098dd3-a2f7-4d04-9130-b9952be96389.png">
+    <link rel="icon" href="img/shield-cat-solid.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/css/glide.theme.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="background-animation"></div>
+    <div class="floating-elements" id="floatingElements">
+        <div class="floating-element" style="width: 66.8904px; height: 66.8904px; left: 73.3064%; top: 26.8144%; animation: 27.2657s ease-in-out infinite float;"></div>
+        <div class="floating-element" style="width: 200.751px; height: 200.751px; left: 22.3721%; top: 20.4597%; animation: 39.8202s ease-in-out infinite float;"></div>
+        <div class="floating-element" style="width: 178.881px; height: 178.881px; left: 93.1065%; top: 75.5391%; animation: 22.9952s ease-in-out infinite float;"></div>
+        <div class="floating-element" style="width: 221.183px; height: 221.183px; left: 18.1443%; top: 19.8548%; animation: 29.1669s ease-in-out infinite float;"></div>
+        <div class="floating-element" style="width: 75.1121px; height: 75.1121px; left: 35.6889%; top: 3.41687%; animation: 20.2545s ease-in-out infinite float;"></div>
+        <div class="floating-element" style="width: 156.998px; height: 156.998px; left: 10.2101%; top: 18.4012%; animation: 23.7379s ease-in-out infinite float;"></div>
+        <div class="floating-element" style="width: 210.644px; height: 210.644px; left: 23.8487%; top: 85.5324%; animation: 31.7619s ease-in-out infinite float;"></div>
+        <div class="floating-element" style="width: 228.76px; height: 228.76px; left: 42.8845%; top: 31.2572%; animation: 28.3413s ease-in-out infinite float;"></div>
+        <div class="floating-element" style="width: 92.1383px; height: 92.1383px; left: 93.0949%; top: 1.2551%; animation: 23.4331s ease-in-out infinite float;"></div>
+        <div class="floating-element" style="width: 234.573px; height: 234.573px; left: 49.675%; top: 63.926%; animation: 27.2558s ease-in-out infinite float;"></div>
+        <div class="floating-element" style="width: 85.078px; height: 85.078px; left: 98.5641%; top: 35.9562%; animation: 34.7028s ease-in-out infinite float;"></div>
+        <div class="floating-element" style="width: 134.388px; height: 134.388px; left: 42.7791%; top: 44.9718%; animation: 31.7861s ease-in-out infinite float;"></div>
+        <div class="floating-element" style="width: 219.496px; height: 219.496px; left: 61.8936%; top: 49.0146%; animation: 22.6972s ease-in-out infinite float;"></div>
+        <div class="floating-element" style="width: 105.172px; height: 105.172px; left: 16.2517%; top: 2.85284%; animation: 36.8441s ease-in-out infinite float;"></div>
+        <div class="floating-element" style="width: 232.51px; height: 232.51px; left: 22.0607%; top: 5.30308%; animation: 37.8134s ease-in-out infinite float;"></div>
+    </div>
     <!-- Navbar -->
     <header class="header">
         <section>
             <a href="#" class="logo">
-                <img src="img/Ativo 4.png" alt="logo">
+                <img src="img/my-logo.png" alt="logo">
             </a>
 
             <nav class="navbar">
@@ -27,20 +48,13 @@
                 <a href="#sobre">Sobre</a>
                 <a href="#trajetoria">Trajetória</a>
                 <a href="#habilidades">Skills</a>
+                <a href="#projetos">Projetos</a>
             </nav>
         </section>
-
-        <!-- menu hamnburguer -->
-        <button id="btnMenu" class="btn-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        </div>
     </header>
 
     <!-- HERO -->
-    <section id="inicio" class="hero">
+    <section id="inicio" class="hero fade">
         <div class="wrapper hero-grid">
 
             <div class="hero-text">
@@ -72,12 +86,13 @@
                         <i class="fas fa-map-marker-alt"></i>
                         Manaus - AM
                     </div>
-
                     <div class="info-box">
-                        <p><strong>Experiência com design desde</strong></p>
-                        <strong>2022</strong>
+                        <strong>Experiência com design desde:</strong>
+                        <strong class="exp-year">2022</strong>
                     </div>
                 </div>
+                
+                
             </div>
 
         </div>
@@ -87,12 +102,12 @@
     <section id="sobre" class="section">
         <div class="wrapper">
 
-            <div class="title">
+            <div class="title fade">
                 <h2>Sobre mim</h2>
                 <p>Um pouco da minha história :) </p>
             </div>
 
-            <div class="grid">
+            <div class="grid fade">
 
                 <div class="card-glass">
                     <i class="fas fa-graduation-cap"></i>
@@ -125,15 +140,15 @@
     </section>
 
     <!-- TRAJETÓRIA -->
-    <section id="journey" class="journey">
+    <section id="trajetoria" class="journey">
         <div class="container">
-            <div class="section-title fade-in">
+            <div class="section-title fade">
                 <h2>Minha Jornada :)</h2>
                 <p>Aqui vai uma pequena história da minha jornada no design, e como tenho progredido!</p>
             </div>
 
             <div class="journey-timeline">
-                <div class="timeline-item fade-in">
+                <div class="timeline-item fade">
                     <div class="timeline-year">2022</div>
                     <div class="timeline-content">
                         <h3 style="margin-bottom: 10px; color: white;">Começo</h3>
@@ -142,7 +157,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="timeline-item fade-in">
+                <div class="timeline-item fade">
                     <div class="timeline-year">2023</div>
                     <div class="timeline-content">
                         <h3 style="margin-bottom: 10px; color: white;">Freelancer</h3>
@@ -150,7 +165,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="timeline-item fade-in">
+                <div class="timeline-item fade">
                     <div class="timeline-year">2024</div>
                     <div class="timeline-content">
                         <h3 style="margin-bottom: 10px; color: white;">Início da Faculdade</h3>
@@ -158,7 +173,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="timeline-item fade-in">
+                <div class="timeline-item fade">
                     <div class="timeline-year">2026</div>
                     <div class="timeline-content">
                         <h3 style="margin-bottom: 10px; color: white;">Foco em Front-end</h3>
@@ -173,51 +188,99 @@
     <section id="habilidades" class="section">
         <div class="wrapper">
 
-            <div class="title">
+            <div class="title fade">
                 <h2>Minhas habilidades</h2>
                 <p>Tecnologias e ferramentas</p>
             </div>
 
-            <div class="skills">
+            <div class="skills fade">
 
                 <div class="skill-box">
-                    <h3>Design</h3>
+                    <div class="skill-title">
+                        <i class="fas fa-brush"></i>
+                        <h3>Design</h3>
+                    </div>
                     <div class="tags">
                         <span>Figma</span>
                         <span>Photoshop</span>
                         <span>Illustrator</span>
                     </div>
+                    <div class="skill-text">
+                        <p>Designer em formação, atuo como diretora de arte com foco em mídias sociais. Desenvolvo capas para reels, carrosséis, criativos para tráfego pago e conteúdos para LinkedIn, com atenção à clareza da comunicação, consistência visual e impacto nas peças.</p>
+                    </div>
                 </div>
 
                 <div class="skill-box">
-                    <h3>Front-end</h3>
+                    <div class="skill-title">
+                        <i class="fas fa-code"></i>
+                        <h3>Front-end</h3>
+                    </div>
                     <div class="tags">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
                     </div>
-                </div>
-
-                <div class="skill-box">
-                    <h3>Outros</h3>
-                    <div class="tags">
-                        <span>Branding</span>
-                        <span>UI/UX</span>
-                        <span>Identidade Visual</span>
+                    <div class="skill-text">
+                        <p>Atualmente, estou em início de atuação na área de front-end, desenvolvendo interfaces web com HTML, CSS e JavaScript. Busco construir páginas responsivas e bem estruturadas, com atenção às boas práticas e ao aprimoramento contínuo das minhas habilidades.</p>
                     </div>
                 </div>
 
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <i class="fas fa-tools"></i>
+                        <h3>Outros</h3>
+                    </div>
+                    <div class="tags">
+                        <span>Wireframing</span>
+                        <span>UI/UX</span>
+                        
+                    </div>
+                    <div class="skill-text">
+                        <p>Tenho conhecimento em UI/UX e wireframing, aplicando princípios de usabilidade, hierarquia visual e organização da informação na construção de interfaces. Busco desenvolver soluções claras, funcionais e alinhadas à experiência do usuário.</p>
+                    </div>
+                </div>
             </div>
-
         </div>
     </section>
+    
+    <!-- CARROSEL -->
+    <section class="projetos" id="projetos">
+        <div class="section-title fade">
+            <h2>Meus Projetos</h2>
+            <p>Alguns dos meus designs e projetos!</p>
+        </div>
+        
+        <div class="glide fade">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide slide-1"><img src="img/card1.png"></li>
+                    <li class="glide__slide slide-2"><img src="img/card2.png"></li>
+                    <li class="glide__slide slide-3"><img src="img/card3.png"></li>
+                    <li class="glide__slide slide-4"><img src="img/card4.png"></li>
+                    <li class="glide__slide slide-5"><img src="img/card5.jpg"></li>
+                    <li class="glide__slide slide-6"><img src="img/card6.jpg"></li>
+                </ul>
+            </div>
+
+            <!-- Bullets -->
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+                <button class="glide__bullet" data-glide-dir="=3"></button>
+                <button class="glide__bullet" data-glide-dir="=4"></button>
+                <button class="glide__bullet" data-glide-dir="=5"></button>
+            </div>
+        </div>
+    </section>
+
 
     <!-- FOOTER -->
     <footer>
         <div class="wrapper footer-content">
 
             <div>
-                <h2>Maria Luisa</h2>
+                <h2 class="highlight">Maria Luisa</h2>
                 <p>Designer & Desenvolvedora</p>
             </div>
 
@@ -234,7 +297,10 @@
             <script>document.write(new Date().getFullYear())</script> - Todos os direitos reservados
         </p>
     </footer>
-
+    <script src="js/fade.js"></script>
+    <script src="js/active-navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/glide.min.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 
 </html>
