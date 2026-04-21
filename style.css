@@ -335,6 +335,8 @@ p {
 .section-title {
     color: #ffffff;
     margin-bottom: 20px;
+    display:flex;
+    justify-content: center;
 }
 
 .title {
