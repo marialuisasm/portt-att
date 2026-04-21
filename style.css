@@ -22,7 +22,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--gradient-4);
-    min-width: 1200px;
 }
 
 .background-animation {
