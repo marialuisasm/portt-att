@@ -720,7 +720,9 @@ footer {
     
     .timeline-content {
         margin-left: 5px;
-        width: 90%;
+        width: 100%;
+        text-wrap: wrap;
+        overflow-wrap: break-word
     }
 
     /* NAVBAR (simples) */
