@@ -714,7 +714,8 @@ footer {
     }
     
     .timeline-content {
-        margin-left: 20px;
+        margin-left: 5px;
+        width: 100%;
     }
 
     /* NAVBAR (simples) */
