@@ -712,8 +712,9 @@ footer {
     .title {
         font-size: 1rem;
     }
+    
     .timeline-content {
-        margin-left: 90px;
+        margin-left: 20px;
     }
 
     /* NAVBAR (simples) */
