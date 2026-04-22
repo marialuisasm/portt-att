@@ -675,10 +675,6 @@ footer {
 /* ========================= */
 @media (max-width: 768px) {
 
-    * {
-      outline: 1px solid red !important;
-    }
-
     /* HERO */
     .hero-grid {
         flex-direction: column;
@@ -735,7 +731,7 @@ footer {
     }
     .journey-timeline::before {
         left: 38px;
-        height:1280px; /* ajusta a linha para caber no layout móvel */
+        height:1290px; /* ajusta a linha para caber no layout móvel */
     }
     .section-title {
         display: flex;
