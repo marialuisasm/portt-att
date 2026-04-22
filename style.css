@@ -675,6 +675,10 @@ footer {
 /* ========================= */
 @media (max-width: 768px) {
 
+    * {
+      outline: 1px solid red !important;
+    }
+
     /* HERO */
     .hero-grid {
         flex-direction: column;
